@@ -2,7 +2,7 @@ package cibot
 
 import (
 	"context"
-	goflag "flag"
+	// goflag "flag"
 	"io/ioutil"
 	"net/http"
 	"strconv"
