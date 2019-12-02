@@ -37,9 +37,9 @@ func (s *Webhook) AddFlags(fs *pflag.FlagSet) {
 
 	// Supress the warning: ERROR: logging before flag.Parse
 	// See https://github.com/kubernetes/kubernetes/issues/17162#issuecomment-225596212
-	fs.AddGoFlagSet(goflag.CommandLine)
-	pflag.Parse()
-	goflag.CommandLine.Parse([]string{})
+	// fs.AddGoFlagSet(goflag.CommandLine)
+	// pflag.Parse()
+	// goflag.CommandLine.Parse([]string{})
 }
 
 func (s *Webhook) Run() {
